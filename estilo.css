@@ -1,0 +1,279 @@
+/* Importação de Fonte */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Estilos Gerais */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f0f4f8, #d9e3f0);
+    color: #333;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Navbar fixa e transparente */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, padding 0.3s;
+    z-index: 1000;
+}
+
+nav a {
+    margin: 0 20px;
+    color: #357ABD;
+    font-weight: 500;
+    font-size: 1.1rem;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 8px;
+}
+
+nav a:hover {
+    background-color: #4A90E2;
+    color: #fff;
+}
+
+/* Cabeçalho */
+.hero {
+    background-image: url('../imagens/foto.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.content {
+    color: white;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.content h1 {
+    font-size: 3em;
+}
+
+.content p {
+    font-size: 1.2em;
+}
+
+/* Seções */
+section {
+    padding: 60px 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+section h2 {
+    font-size: 2rem;
+    color: #357ABD;
+}
+
+section p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Links de Contato (WhatsApp e Instagram) */
+#contato {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.contato-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contato-icon {
+    font-size: 2.5rem; /* Tamanho do ícone */
+    color: #357ABD;
+    transition: transform 0.3s;
+}
+
+.contato-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Rodapé */
+footer {
+    background-color: #4A90E2;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    nav a {
+        margin: 10px 0;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .contato-links {
+        flex-direction: column;
+    }
+}
+
+/* Tema Claro (Padrão) */
+body {
+    background-color: #f0f4f8;
+    color: #333;
+}
+
+/* Tema Escuro */
+body.dark {
+    background-color: #121212;
+    color: #f0f0f0;
+}
+
+/* Outros estilos (exemplo: navbar, links, etc.) */
+nav {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+nav.dark {
+    background-color: #333;
+}
+
+footer {
+    background-color: #4A90E2;
+    color: #fff;
+}
+
+footer.dark {
+    background-color: #333;
+}
+
+/* Estilo para o tema claro (padrão) */
+body {
+    background-color: #fff;
+    color: #333;
+}
+
+/* Estilo para o tema escuro */
+body.dark {
+    background-color: #121212; /* Fundo escuro */
+    color: #e0e0e0; /* Texto claro */
+}
+
+/* Navbar */
+nav {
+    background-color: #fff;  /* Navbar clara por padrão */
+}
+
+body.dark nav {
+    background-color: #333;  /* Navbar escura no modo dark */
+}
+
+nav a {
+    color: #357ABD;
+}
+
+body.dark nav a {
+    color: #e0e0e0; /* Links claros no modo dark */
+}
+
+/* Cabeçalho */
+header {
+    background-color: #4A90E2;
+    color: #fff;
+}
+
+body.dark header {
+    background-color: #2c3e50; /* Cor de fundo escura para o cabeçalho */
+}
+
+/* Seções */
+section {
+    background-color: #fff;
+    color: #333;
+}
+
+body.dark section {
+    background-color: #2c3e50; /* Fundo escuro nas seções */
+    color: #e0e0e0; /* Texto claro nas seções */
+}
+
+/* Rodapé */
+footer {
+    background-color: #4A90E2;
+    color: #fff;
+}
+
+body.dark footer {
+    background-color: #2c3e50; /* Fundo escuro no rodapé */
+}
+
+/* Ajustes nos Botões */
+.botao-agendar {
+    background-color: #357ABD;
+    color: #fff;
+}
+
+body.dark .botao-agendar {
+    background-color: #5c6bc0; /* Cor de botão clara no tema escuro */
+}
+
+/* Links de Contato (WhatsApp e Instagram) */
+.contato-icon {
+    font-size: 2.5rem; /* Tamanho do ícone */
+    color: #357ABD; /* Cor normal dos ícones no tema claro */
+    transition: transform 0.3s, color 0.3s; /* Transições suaves */
+}
+
+body.dark .contato-icon {
+    filter: brightness(0) invert(1); /* Torna os ícones brancos no modo escuro */
+    color: #fff; /* Cor dos ícones no tema escuro */
+}
+
+/* Botão de trocar tema */
+#theme-toggle {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    background: none; /* Remove qualquer fundo ao redor do ícone */
+    border: none; /* Remove qualquer borda */
+    padding: 0;
+    cursor: pointer;
+    z-index: 1001; /* Garante que o botão fique acima de outros elementos */
+}
+
+/* Ícone do botão */
+#theme-toggle i {
+    font-size: 30px; /* Tamanho do ícone */
+    color: #333; /* Cor do ícone no tema claro */
+}
+
+/* Mudar a cor do ícone no tema escuro */
+body.dark #theme-toggle i {
+    color: #e0e0e0; /* Cor clara para o ícone no tema escuro */
+}
