@@ -41,7 +41,7 @@ nav a:hover {
 
 /* Cabeçalho */
 .hero {
-    background-image: url('../imagens/foto.jpg');
+    background-image: url('foto.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh;
